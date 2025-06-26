@@ -1,0 +1,64 @@
+# === Python stuff ===
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pyc
+*.sqlite3
+.env
+venv/
+env/
+ENV/
+
+# === Django stuff ===
+db.sqlite3
+media/
+staticfiles/
+
+# === VSCode ===
+.vscode/
+
+# === Node / Next.js / Yarn / PNPM stuff ===
+node_modules/
+.pnp
+.pnp.*
+.yarn/
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+.next/
+out/
+dist/
+build/
+
+# === Logs ===
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# === MacOS ===
+.DS_Store
+
+# === Env files ===
+.env*
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Testing ===
+coverage/
+
+# === Vercel ===
+.vercel
+
+# === TypeScript ===
+*.tsbuildinfo
+next-env.d.ts
+
+# === Misc ===
+*.pem
