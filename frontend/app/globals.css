@@ -1,0 +1,252 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    @apply border-gray-200;
+  }
+
+  body {
+    @apply bg-white text-gray-900;
+  }
+}
+
+
+@layer components {
+  .wine-showcase {
+    @apply min-h-screen bg-gradient-to-br from-amber-50 to-orange-50;
+  }
+
+  /* Header Styles */
+  .header {
+    @apply bg-white/90 backdrop-blur-sm border-b border-amber-200 sticky top-0 z-50;
+  }
+
+  .header-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between;
+  }
+
+  .logo {
+    @apply flex items-center space-x-2;
+  }
+
+  .logo-icon {
+    @apply h-8 w-8 text-amber-600;
+  }
+
+  .logo-text {
+    @apply text-2xl font-bold text-gray-900;
+  }
+
+  .nav {
+    @apply hidden md:flex space-x-8;
+  }
+
+  .nav-link {
+    @apply text-gray-700 hover:text-amber-600 font-medium transition-colors duration-200;
+  }
+
+  /* Hero Section */
+  .hero {
+    @apply py-20 lg:py-32;
+  }
+
+  .hero-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center;
+  }
+
+  .hero-content {
+    @apply space-y-8;
+  }
+
+  .hero-title {
+    @apply text-4xl lg:text-6xl font-bold text-gray-900 leading-tight;
+  }
+
+  .hero-description {
+    @apply text-xl text-gray-600 leading-relaxed;
+  }
+
+  .hero-button {
+    @apply bg-amber-600 hover:bg-amber-700 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors duration-200 shadow-lg hover:shadow-xl;
+  }
+
+  .hero-image {
+    @apply flex justify-center lg:justify-end;
+  }
+
+  .hero-img {
+    @apply rounded-2xl shadow-2xl;
+  }
+
+  /* Wines Section */
+  .wines-section {
+    @apply py-20 bg-white;
+  }
+
+  .wines-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .wines-header {
+    @apply text-center mb-16;
+  }
+
+  .wines-title {
+    @apply text-4xl font-bold text-gray-900 mb-4;
+  }
+
+  .wines-subtitle {
+    @apply text-xl text-gray-600;
+  }
+
+  .wines-grid {
+    @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8;
+  }
+
+  /* Wine Card */
+  .wine-card {
+    @apply bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden;
+  }
+
+  .wine-card:hover .wine-overlay {
+    @apply opacity-100;
+  }
+
+  .wine-card:hover .wine-image {
+    @apply scale-105;
+  }
+
+  .wine-image-container {
+    @apply relative overflow-hidden;
+  }
+
+  .wine-image {
+    @apply w-full h-64 object-cover transition-transform duration-300;
+  }
+
+  .wine-overlay {
+    @apply absolute inset-0 bg-black/50 opacity-0 transition-opacity duration-300 flex items-center justify-center;
+  }
+
+  .wine-button {
+    @apply bg-white text-gray-900 px-6 py-2 rounded-lg font-semibold hover:bg-gray-100 transition-colors duration-200;
+  }
+
+  .wine-info {
+    @apply p-6 space-y-4;
+  }
+
+  .wine-header-info {
+    @apply flex justify-between items-start;
+  }
+
+  .wine-name {
+    @apply text-xl font-bold text-gray-900 flex-1 mr-4;
+  }
+
+  .wine-price {
+    @apply text-2xl font-bold text-amber-600;
+  }
+
+  .wine-meta {
+    @apply flex flex-wrap gap-4 text-sm text-gray-600;
+  }
+
+  .wine-location,
+  .wine-vintage {
+    @apply flex items-center space-x-1;
+  }
+
+  .wine-icon {
+    @apply h-4 w-4;
+  }
+
+  .wine-rating {
+    @apply flex items-center space-x-2;
+  }
+
+  .rating-stars {
+    @apply flex space-x-1;
+  }
+
+  .star {
+    @apply h-4 w-4;
+  }
+
+  .star-filled {
+    @apply text-yellow-400 fill-current;
+  }
+
+  .star-empty {
+    @apply text-gray-300;
+  }
+
+  .rating-text {
+    @apply text-sm font-semibold text-gray-700;
+  }
+
+  .wine-description {
+    @apply text-gray-600 leading-relaxed;
+  }
+
+  .wine-type {
+    @apply flex justify-end;
+  }
+
+  .type-badge {
+    @apply bg-amber-100 text-amber-800 px-3 py-1 rounded-full text-sm font-medium;
+  }
+
+  /* Footer */
+  .footer {
+    @apply bg-gray-900 text-white py-16;
+  }
+
+  .footer-container {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+
+  .footer-content {
+    @apply grid grid-cols-1 md:grid-cols-3 gap-8 mb-8;
+  }
+
+  .footer-section {
+    @apply space-y-4;
+  }
+
+  .footer-logo {
+    @apply flex items-center space-x-2 mb-4;
+  }
+
+  .footer-logo-icon {
+    @apply h-8 w-8 text-amber-400;
+  }
+
+  .footer-logo-text {
+    @apply text-2xl font-bold;
+  }
+
+  .footer-description {
+    @apply text-gray-300 leading-relaxed;
+  }
+
+  .footer-title {
+    @apply text-lg font-semibold mb-4;
+  }
+
+  .footer-links {
+    @apply space-y-2;
+  }
+
+  .footer-link {
+    @apply text-gray-300 hover:text-amber-400 transition-colors duration-200;
+  }
+
+  .footer-contact {
+    @apply text-gray-300 space-y-1;
+  }
+
+  .footer-bottom {
+    @apply border-t border-gray-800 pt-8 text-center text-gray-400;
+  }
+}
